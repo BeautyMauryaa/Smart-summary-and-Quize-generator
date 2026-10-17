@@ -1,62 +1,57 @@
-![image](https://github.com/user-attachments/assets/12fcdb0f-1a76-49e2-9ce0-8b7dfa5b27af)
-![image](https://github.com/user-attachments/assets/bcb94747-82fe-4682-82cd-4f9d077bdda6)
-![image](https://github.com/user-attachments/assets/7d29336c-05f8-4967-adfc-dd55577634c6)
-![image](https://github.com/user-attachments/assets/b147e50b-f5da-4dbb-9027-c3b94ed1f5c5)
+# Smart Summary & Quiz Generator — UI Prototype
 
+A React-based interface concept for turning study material into summaries and quiz workflows. The current repository contains the frontend UI and mock data; it does **not** currently contain the separate Node.js/Express upload-processing backend described in earlier notes.
 
+## Screens and components
 
+- Dashboard with summary statistics and recent activity
+- Summary creation, list, and detail screens
+- Quiz list, creation, taking, and results screens
+- History and settings pages
+- Reusable UI components for buttons, cards, inputs, selects, and badges
 
+## Tech stack
 
-# Smart Quiz & Summary Generator
+- React with TypeScript
+- Vite
+- Tailwind CSS
 
-This project was created as part of my first hackathon experience. It focuses on generating quizzes and content summaries by processing uploaded files like PDFs or text documents.
+## Run locally
 
-## Features
+Requires Node.js and npm.
 
-- Upload content (PDF or text files)
-- Automatically generate objective quiz questions
-- Generate summary of uploaded content
-- Simple and interactive user interface
-
-## Technologies Used
-
-- HTML, CSS, JavaScript
-- Node.js with Express.js
-- File parsing and basic text processing logic
-
-## Folder Structure
-
-- `client/` – Contains frontend HTML, CSS, and JS files
-- `server/` – Backend logic using Node.js and Express
-- `routes/` – APIs for upload and processing
-- `uploads/` – Temporary storage for uploaded files
-
-## Getting Started
-
-### Prerequisites
-
-- Ensure Node.js and npm are installed on your machine.
-
-### Installation Steps
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/Smart-QuizeAnd-Summary-Generator.git
-### Navigate to the project directory:
-cd Project
-Install dependencies (node_modules are not included in the repo):
-
+```bash
+cd project
 npm install
-Start the server:
+npm run dev
+```
 
-node server.js
-Open your browser and go to:
+Open the local URL printed by Vite.
 
-http://localhost:3000
+Build the frontend:
 
-### Notes
-This was my first hackathon project submission.
+```bash
+npm run build
+```
 
-The project is focused on frontend interaction with a simple backend for file handling and basic logic execution.
+## Project structure
 
-Intended for educational and demo purposes only.
+```text
+project/
+├── src/
+│   ├── components/   # Dashboard, summary, quiz, settings, and UI components
+│   ├── context/      # App context
+│   ├── pages/        # Main screens
+│   ├── services/     # Data service and mock data
+│   └── types/        # Shared TypeScript types
+├── package.json
+└── vite.config.ts
+```
+
+## Current status
+
+This is a frontend prototype. The data service and mock data are used by the current UI. Real file uploads, document parsing, AI summarization, quiz generation, and backend persistence should not be claimed as implemented until those services are added and tested.
+
+## Author
+
+**Beauty Mauryaa** · [GitHub](https://github.com/BeautyMauryaa)
